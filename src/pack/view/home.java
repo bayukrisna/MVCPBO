@@ -99,7 +99,6 @@ public class home extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -277,10 +276,7 @@ public class home extends javax.swing.JFrame {
         getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 410, 930, 30));
 
         jPanel5.setBackground(new java.awt.Color(255, 204, 204));
-        getContentPane().add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 100, 830, 310));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/daun.jpg"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 300, 210));
+        getContentPane().add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 930, 410));
 
         setBounds(0, 0, 944, 738);
     }// </editor-fold>//GEN-END:initComponents
@@ -462,7 +458,6 @@ public class home extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> cbpack;
     private javax.swing.JButton hapus;
     private javax.swing.JTextField harga;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
