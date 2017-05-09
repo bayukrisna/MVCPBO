@@ -88,7 +88,6 @@ public class home extends javax.swing.JFrame {
         cari = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         table = new javax.swing.JTable();
-        txtadmin = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         kd1 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -96,6 +95,10 @@ public class home extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
+        txtadmin = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
+        jPanel5 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -116,42 +119,42 @@ public class home extends javax.swing.JFrame {
         kd.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 14)); // NOI18N
         kd.setText("KASIR :");
         getContentPane().add(kd);
-        kd.setBounds(290, 110, 80, 30);
+        kd.setBounds(210, 110, 80, 30);
 
         kode.setFont(new java.awt.Font("Sitka Banner", 0, 14)); // NOI18N
         getContentPane().add(kode);
-        kode.setBounds(410, 150, 250, 30);
+        kode.setBounds(330, 150, 250, 30);
 
         b2.setFont(new java.awt.Font("Lao UI", 1, 14)); // NOI18N
         b2.setText("Nama Barang");
         getContentPane().add(b2);
-        b2.setBounds(270, 200, 130, 30);
+        b2.setBounds(190, 200, 130, 30);
 
         b7.setFont(new java.awt.Font("Lao UI", 1, 14)); // NOI18N
         b7.setText("Kategori Barang");
         getContentPane().add(b7);
-        b7.setBounds(270, 250, 130, 30);
+        b7.setBounds(190, 250, 130, 30);
 
         b8.setFont(new java.awt.Font("Lao UI", 1, 14)); // NOI18N
         b8.setText("Jenis Kemasan");
         getContentPane().add(b8);
-        b8.setBounds(270, 300, 130, 30);
+        b8.setBounds(190, 300, 130, 30);
 
         harga.setFont(new java.awt.Font("Sitka Banner", 0, 14)); // NOI18N
         getContentPane().add(harga);
-        harga.setBounds(410, 350, 250, 30);
+        harga.setBounds(330, 350, 250, 30);
 
         nama.setFont(new java.awt.Font("Sitka Banner", 0, 14)); // NOI18N
         getContentPane().add(nama);
-        nama.setBounds(410, 200, 250, 30);
+        nama.setBounds(330, 200, 250, 30);
 
         cbpack.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pack", "Dus", "Lusin", "Bijian" }));
         getContentPane().add(cbpack);
-        cbpack.setBounds(410, 300, 250, 30);
+        cbpack.setBounds(330, 300, 250, 30);
 
         cbkategori.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Makanan", "Elektronik", "Sandang", "Pecah belah", "Baranglain" }));
         getContentPane().add(cbkategori);
-        cbkategori.setBounds(410, 250, 250, 30);
+        cbkategori.setBounds(330, 250, 250, 30);
 
         simpan.setBackground(new java.awt.Color(204, 204, 255));
         simpan.setFont(new java.awt.Font("Eras Medium ITC", 1, 14)); // NOI18N
@@ -162,7 +165,7 @@ public class home extends javax.swing.JFrame {
             }
         });
         getContentPane().add(simpan);
-        simpan.setBounds(710, 150, 110, 30);
+        simpan.setBounds(630, 130, 110, 30);
 
         ubah.setBackground(new java.awt.Color(204, 204, 255));
         ubah.setFont(new java.awt.Font("Eras Medium ITC", 1, 14)); // NOI18N
@@ -173,7 +176,7 @@ public class home extends javax.swing.JFrame {
             }
         });
         getContentPane().add(ubah);
-        ubah.setBounds(710, 250, 110, 30);
+        ubah.setBounds(630, 230, 110, 30);
 
         keluar.setBackground(new java.awt.Color(204, 204, 255));
         keluar.setFont(new java.awt.Font("Eras Medium ITC", 1, 14)); // NOI18N
@@ -184,7 +187,7 @@ public class home extends javax.swing.JFrame {
             }
         });
         getContentPane().add(keluar);
-        keluar.setBounds(710, 350, 110, 30);
+        keluar.setBounds(630, 330, 110, 30);
 
         bersih.setBackground(new java.awt.Color(204, 204, 255));
         bersih.setFont(new java.awt.Font("Eras Medium ITC", 1, 14)); // NOI18N
@@ -195,7 +198,7 @@ public class home extends javax.swing.JFrame {
             }
         });
         getContentPane().add(bersih);
-        bersih.setBounds(710, 200, 110, 30);
+        bersih.setBounds(630, 180, 110, 30);
 
         hapus.setBackground(new java.awt.Color(204, 204, 255));
         hapus.setFont(new java.awt.Font("Eras Medium ITC", 1, 14)); // NOI18N
@@ -206,12 +209,12 @@ public class home extends javax.swing.JFrame {
             }
         });
         getContentPane().add(hapus);
-        hapus.setBounds(710, 300, 110, 30);
+        hapus.setBounds(630, 280, 110, 30);
 
         b5.setFont(new java.awt.Font("Lao UI", 1, 14)); // NOI18N
         b5.setText("Harga");
         getContentPane().add(b5);
-        b5.setBounds(270, 350, 140, 30);
+        b5.setBounds(190, 350, 140, 30);
 
         b9.setFont(new java.awt.Font("Lao UI", 1, 14)); // NOI18N
         b9.setText("Pencarian Berdasarkan Kategori");
@@ -256,10 +259,6 @@ public class home extends javax.swing.JFrame {
         getContentPane().add(jScrollPane1);
         jScrollPane1.setBounds(10, 490, 910, 200);
 
-        txtadmin.setFont(new java.awt.Font("DFGothic-EB", 0, 18)); // NOI18N
-        getContentPane().add(txtadmin);
-        txtadmin.setBounds(400, 110, 140, 30);
-
         jPanel1.setBackground(new java.awt.Color(153, 153, 153));
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 440, 930, 260);
@@ -267,31 +266,49 @@ public class home extends javax.swing.JFrame {
         kd1.setFont(new java.awt.Font("Lao UI", 1, 14)); // NOI18N
         kd1.setText("Kode Barang");
         getContentPane().add(kd1);
-        kd1.setBounds(270, 150, 130, 30);
+        kd1.setBounds(190, 150, 130, 30);
 
         jLabel5.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 26)); // NOI18N
         jLabel5.setText("SUPERMARKET CETAR");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(410, 20, 230, 30);
+        jLabel5.setBounds(370, 20, 230, 30);
 
         jLabel8.setFont(new java.awt.Font("Traditional Arabic", 1, 18)); // NOI18N
         jLabel8.setText("Jl. SAWOJAJAR GANG 13 NO. 60, SAWOJAJAR, MALANG.");
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(240, 50, 610, 30);
+        jLabel8.setBounds(200, 50, 610, 30);
 
         jLabel11.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel11.setText("Email : bayu_krisna_24rpl@student.smktelkom-mlg.sch.id");
         getContentPane().add(jLabel11);
-        jLabel11.setBounds(290, 80, 450, 20);
+        jLabel11.setBounds(250, 80, 450, 20);
 
         jLabel4.setFont(new java.awt.Font("Adobe Caslon Pro Bold", 0, 18)); // NOI18N
         jLabel4.setText("DATA BARANG TERSEDIA");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(330, 400, 260, 40);
+        jLabel4.setBounds(330, 400, 260, 50);
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 204));
+        jPanel2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        txtadmin.setFont(new java.awt.Font("DFGothic-EB", 0, 18)); // NOI18N
+        jPanel2.add(txtadmin);
+
         getContentPane().add(jPanel2);
-        jPanel2.setBounds(0, 0, 930, 440);
+        jPanel2.setBounds(620, 110, 130, 290);
+
+        jPanel3.setBackground(new java.awt.Color(255, 255, 204));
+        jPanel3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        getContentPane().add(jPanel3);
+        jPanel3.setBounds(170, 110, 430, 290);
+
+        jPanel4.setBackground(new java.awt.Color(102, 102, 102));
+        getContentPane().add(jPanel4);
+        jPanel4.setBounds(0, 410, 930, 30);
+
+        jPanel5.setBackground(new java.awt.Color(255, 204, 204));
+        getContentPane().add(jPanel5);
+        jPanel5.setBounds(0, 0, 930, 410);
 
         setBounds(0, 0, 944, 738);
     }// </editor-fold>//GEN-END:initComponents
@@ -479,6 +496,9 @@ public class home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel kd;
     private javax.swing.JLabel kd1;
