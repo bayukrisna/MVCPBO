@@ -99,6 +99,7 @@ public class home extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -106,55 +107,44 @@ public class home extends javax.swing.JFrame {
                 formWindowOpened(evt);
             }
         });
-        getContentPane().setLayout(null);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         Hasil.setFont(new java.awt.Font("Cooper Black", 0, 18)); // NOI18N
-        getContentPane().add(Hasil);
-        Hasil.setBounds(790, 30, 140, 30);
+        getContentPane().add(Hasil, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 40, 140, 30));
 
         tgl.setFont(new java.awt.Font("Cooper Black", 0, 18)); // NOI18N
-        getContentPane().add(tgl);
-        tgl.setBounds(770, 0, 140, 30);
+        getContentPane().add(tgl, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 0, 140, 30));
 
         kd.setFont(new java.awt.Font("Copperplate Gothic Bold", 1, 14)); // NOI18N
         kd.setText("KASIR :");
-        getContentPane().add(kd);
-        kd.setBounds(210, 110, 80, 30);
+        getContentPane().add(kd, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 110, 80, 30));
 
         kode.setFont(new java.awt.Font("Sitka Banner", 0, 14)); // NOI18N
-        getContentPane().add(kode);
-        kode.setBounds(330, 150, 250, 30);
+        getContentPane().add(kode, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 150, 250, 30));
 
         b2.setFont(new java.awt.Font("Lao UI", 1, 14)); // NOI18N
         b2.setText("Nama Barang");
-        getContentPane().add(b2);
-        b2.setBounds(190, 200, 130, 30);
+        getContentPane().add(b2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, 130, 30));
 
         b7.setFont(new java.awt.Font("Lao UI", 1, 14)); // NOI18N
         b7.setText("Kategori Barang");
-        getContentPane().add(b7);
-        b7.setBounds(190, 250, 130, 30);
+        getContentPane().add(b7, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 250, 130, 30));
 
         b8.setFont(new java.awt.Font("Lao UI", 1, 14)); // NOI18N
         b8.setText("Jenis Kemasan");
-        getContentPane().add(b8);
-        b8.setBounds(190, 300, 130, 30);
+        getContentPane().add(b8, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 300, 130, 30));
 
         harga.setFont(new java.awt.Font("Sitka Banner", 0, 14)); // NOI18N
-        getContentPane().add(harga);
-        harga.setBounds(330, 350, 250, 30);
+        getContentPane().add(harga, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 350, 250, 30));
 
         nama.setFont(new java.awt.Font("Sitka Banner", 0, 14)); // NOI18N
-        getContentPane().add(nama);
-        nama.setBounds(330, 200, 250, 30);
+        getContentPane().add(nama, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 200, 250, 30));
 
         cbpack.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pack", "Dus", "Lusin", "Bijian" }));
-        getContentPane().add(cbpack);
-        cbpack.setBounds(330, 300, 250, 30);
+        getContentPane().add(cbpack, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 300, 250, 30));
 
         cbkategori.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Makanan", "Elektronik", "Sandang", "Pecah belah", "Baranglain" }));
-        getContentPane().add(cbkategori);
-        cbkategori.setBounds(330, 250, 250, 30);
+        getContentPane().add(cbkategori, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 250, 250, 30));
 
         simpan.setBackground(new java.awt.Color(204, 204, 255));
         simpan.setFont(new java.awt.Font("Eras Medium ITC", 1, 14)); // NOI18N
@@ -164,8 +154,7 @@ public class home extends javax.swing.JFrame {
                 simpanActionPerformed(evt);
             }
         });
-        getContentPane().add(simpan);
-        simpan.setBounds(630, 130, 110, 30);
+        getContentPane().add(simpan, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 130, 110, 30));
 
         ubah.setBackground(new java.awt.Color(204, 204, 255));
         ubah.setFont(new java.awt.Font("Eras Medium ITC", 1, 14)); // NOI18N
@@ -175,8 +164,7 @@ public class home extends javax.swing.JFrame {
                 ubahActionPerformed(evt);
             }
         });
-        getContentPane().add(ubah);
-        ubah.setBounds(630, 230, 110, 30);
+        getContentPane().add(ubah, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 230, 110, 30));
 
         keluar.setBackground(new java.awt.Color(204, 204, 255));
         keluar.setFont(new java.awt.Font("Eras Medium ITC", 1, 14)); // NOI18N
@@ -186,8 +174,7 @@ public class home extends javax.swing.JFrame {
                 keluarActionPerformed(evt);
             }
         });
-        getContentPane().add(keluar);
-        keluar.setBounds(630, 330, 110, 30);
+        getContentPane().add(keluar, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 330, 110, 30));
 
         bersih.setBackground(new java.awt.Color(204, 204, 255));
         bersih.setFont(new java.awt.Font("Eras Medium ITC", 1, 14)); // NOI18N
@@ -197,8 +184,7 @@ public class home extends javax.swing.JFrame {
                 bersihActionPerformed(evt);
             }
         });
-        getContentPane().add(bersih);
-        bersih.setBounds(630, 180, 110, 30);
+        getContentPane().add(bersih, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 180, 110, 30));
 
         hapus.setBackground(new java.awt.Color(204, 204, 255));
         hapus.setFont(new java.awt.Font("Eras Medium ITC", 1, 14)); // NOI18N
@@ -208,26 +194,21 @@ public class home extends javax.swing.JFrame {
                 hapusActionPerformed(evt);
             }
         });
-        getContentPane().add(hapus);
-        hapus.setBounds(630, 280, 110, 30);
+        getContentPane().add(hapus, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 280, 110, 30));
 
         b5.setFont(new java.awt.Font("Lao UI", 1, 14)); // NOI18N
         b5.setText("Harga");
-        getContentPane().add(b5);
-        b5.setBounds(190, 350, 140, 30);
+        getContentPane().add(b5, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 350, 140, 30));
 
         b9.setFont(new java.awt.Font("Lao UI", 1, 14)); // NOI18N
         b9.setText("Pencarian Berdasarkan Kategori");
-        getContentPane().add(b9);
-        b9.setBounds(130, 450, 260, 30);
+        getContentPane().add(b9, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 450, 260, 30));
 
         Hasil1.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
-        getContentPane().add(Hasil1);
-        Hasil1.setBounds(890, 30, 220, 40);
+        getContentPane().add(Hasil1, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 200, 170, 30));
 
         cbcari.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Makanan", "Elektronik", "Sandang", "Pecah belah", "Baranglain" }));
-        getContentPane().add(cbcari);
-        cbcari.setBounds(390, 450, 230, 30);
+        getContentPane().add(cbcari, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 450, 230, 30));
 
         cari.setText("Cari");
         cari.addActionListener(new java.awt.event.ActionListener() {
@@ -235,8 +216,7 @@ public class home extends javax.swing.JFrame {
                 cariActionPerformed(evt);
             }
         });
-        getContentPane().add(cari);
-        cari.setBounds(630, 450, 110, 30);
+        getContentPane().add(cari, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 450, 110, 30));
 
         table.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -256,37 +236,30 @@ public class home extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(table);
 
-        getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(10, 490, 910, 200);
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 490, 910, 200));
 
         jPanel1.setBackground(new java.awt.Color(153, 153, 153));
-        getContentPane().add(jPanel1);
-        jPanel1.setBounds(0, 440, 930, 260);
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 440, 930, 260));
 
         kd1.setFont(new java.awt.Font("Lao UI", 1, 14)); // NOI18N
         kd1.setText("Kode Barang");
-        getContentPane().add(kd1);
-        kd1.setBounds(190, 150, 130, 30);
+        getContentPane().add(kd1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 150, 130, 30));
 
         jLabel5.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 26)); // NOI18N
         jLabel5.setText("SUPERMARKET CETAR");
-        getContentPane().add(jLabel5);
-        jLabel5.setBounds(370, 20, 230, 30);
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 20, 230, 30));
 
         jLabel8.setFont(new java.awt.Font("Traditional Arabic", 1, 18)); // NOI18N
         jLabel8.setText("Jl. SAWOJAJAR GANG 13 NO. 60, SAWOJAJAR, MALANG.");
-        getContentPane().add(jLabel8);
-        jLabel8.setBounds(200, 50, 610, 30);
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 50, 610, 30));
 
         jLabel11.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel11.setText("Email : bayu_krisna_24rpl@student.smktelkom-mlg.sch.id");
-        getContentPane().add(jLabel11);
-        jLabel11.setBounds(250, 80, 450, 20);
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, 450, 20));
 
         jLabel4.setFont(new java.awt.Font("Adobe Caslon Pro Bold", 0, 18)); // NOI18N
         jLabel4.setText("DATA BARANG TERSEDIA");
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(330, 400, 260, 50);
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 400, 260, 50));
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 204));
         jPanel2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -294,21 +267,20 @@ public class home extends javax.swing.JFrame {
         txtadmin.setFont(new java.awt.Font("DFGothic-EB", 0, 18)); // NOI18N
         jPanel2.add(txtadmin);
 
-        getContentPane().add(jPanel2);
-        jPanel2.setBounds(620, 110, 130, 290);
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 110, 440, 280));
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 204));
         jPanel3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(jPanel3);
-        jPanel3.setBounds(170, 110, 430, 290);
+        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 110, 140, 280));
 
         jPanel4.setBackground(new java.awt.Color(102, 102, 102));
-        getContentPane().add(jPanel4);
-        jPanel4.setBounds(0, 410, 930, 30);
+        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 410, 930, 30));
 
         jPanel5.setBackground(new java.awt.Color(255, 204, 204));
-        getContentPane().add(jPanel5);
-        jPanel5.setBounds(0, 0, 930, 410);
+        getContentPane().add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 100, 830, 310));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/daun.jpg"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 300, 210));
 
         setBounds(0, 0, 944, 738);
     }// </editor-fold>//GEN-END:initComponents
@@ -490,6 +462,7 @@ public class home extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> cbpack;
     private javax.swing.JButton hapus;
     private javax.swing.JTextField harga;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

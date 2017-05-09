@@ -102,6 +102,12 @@ public class login extends javax.swing.JFrame {
         jLabel2.setText("Username");
         getContentPane().add(jLabel2);
         jLabel2.setBounds(70, 150, 160, 30);
+
+        txtnama.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtnamaActionPerformed(evt);
+            }
+        });
         getContentPane().add(txtnama);
         txtnama.setBounds(170, 150, 240, 30);
         getContentPane().add(txtpass);
@@ -163,6 +169,10 @@ public class login extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null,"Mohon maaf, ulangi lagi prosedur");
         }// TODO add your handling code here:
     }//GEN-LAST:event_btnsignupActionPerformed
+
+    private void txtnamaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtnamaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtnamaActionPerformed
 
     /**
      * @param args the command line arguments
